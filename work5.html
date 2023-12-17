@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <title>Задача5</title>
+            <meta charset="UTF-8">
+        </head>
+            <body>
+            <script>
+
+              class Animal {
+                constructor (name) {
+                    this.name = name;
+                }
+                answer () {
+                console.log (`Animal name is  ${this.name}`)
+              }
+              }
+
+              class Cats extends Animal {
+                constructor (name, gender) {
+                    super(name);
+                    this.gender = gender;
+                }
+              }
+              
+
+              class Dogs extends Animal {
+                constructor (name, age) {
+                    super (name);
+                    this.age = age;
+                }
+              }
+
+              let animal= new Animal ('Sasha');
+
+              let cat = new Cats ('Masha', 'girl');
+              console.log (cat);
+
+              let dog = new Dogs ('Rich', 3);
+              console.log (dog);
+
+              animal.answer( );
+              cat.answer();
+              dog.answer();
+              </script>
+            </body>
+            </html>
